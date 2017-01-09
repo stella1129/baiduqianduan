@@ -128,7 +128,7 @@ function each(arr,fn){
             }
             j++;
 
-        },1000)
+        },500)
 
 
     }

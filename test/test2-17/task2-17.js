@@ -14,9 +14,9 @@ window.onload = function() {
             //console.log(y)
             dataStr = y;
             date.setDate(date.getDate() + 1);
-            returndata[dataStr] = x;
+            returndata[dataStr] = Math.ceil(Math.random() * x);
         }
-        //console.log(returndata);
+        console.log(returndata);
         return returndata;
 
     }
