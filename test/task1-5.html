@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mission5</title>
+    <style>
+        *{margin: 0;padding: 0}
+        #wrap{
+            background-color: gainsboro;
+        }
+        header{
+            background-color: black;
+        }
+        #sixth{
+            float: right;
+            background-color: white;
+            width: 300px;
+        }
+        #sixth{
+            margin-top: 20px;
+        }
+        #left{
+            margin-right: 320px;
+            overflow: hidden;
+        }
+        #first,#third,#fourth,#fifth{
+            background-color: white;
+            margin-top: 20px;
+        }
+        header .daohang nav{
+            float: right;
+        }
+        header{
+            overflow: hidden;
+        }
+        header h1{
+            font-family: cursive;
+            color: #aaaaaa;
+        }
+        #table{
+            width: 90%;
+        }
+        #table1{
+            width: 90%;
+        }
+        footer{
+            text-align: center;
+            background-color: black;
+            color: #aaaaaa;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header>
+            <div class="seeyou">
+                <h1>SEE YOU </h1>
+            </div>
+            <div class="daohang" style="text-indent: 2em">
+                <nav>
+                <a href="#">导航链接一</a>
+                <a href="#">导航链接二</a>
+                <a href="#">导航链接三</a>
+                </nav>
+            </div>
+    </header>
+    <div id="sixth">
+        <h2>这是一个侧栏,侧栏窗口标题</h2>
+        <p />
+        <table  id="table2">
+            <tr>
+                <th style="text-align: right">请输入邮箱地址</th>
+                <th style="text-align: left"><input type="text" value="这是一个文本输入框"></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="font-size: small;text-align: left">邮箱地址按要求输入</th>
+            </tr>
+            <tr>
+                <th style="text-align: right">请输入密码</th>
+                <th style="text-align: left"><input type="text" value="文本输入框" ></th>
+            </tr>
+            <tr>
+                <th style="text-align: right">重复密码</th>
+                <th style="text-align: left"><input type="text" value="文本输入框" ></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th style="font-size: small;text-align: left">密码是6-16位英文数字</th>
+            </tr>
+            <tr>
+                <th style="text-align: right">性别</th>
+                <th style="text-align: left"><input type="radio" name="sex" checked="checked">男
+                    <input type="radio" name="sex" >女</th>
+            </tr>
+            <tr>
+                <th style="text-align: right">城市</th>
+                <th style="text-align: left">
+                    <select>
+                        <option value="1">北京</option>
+                        <option value="2">上海</option>
+                        <option value="3">杭州</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: right">爱好</th>
+                <th style="text-align: left"> <input type="checkbox" value="yundong">运动
+                    <input type="checkbox" value="yishu">艺术
+                    <input type="checkbox" value="kexue">科学
+                </th>
+            </tr>
+            <tr>
+                <th style="text-align: right">个人描述</th>
+                <th rowspan="2" style="text-align: left"><textarea type="text" value="多行输入文本框">sde</textarea></th>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+            </tr>
+        </table>
+        <div>
+            <input type="button" style="background-color: #128fdc;width: 80%" value="确认提交">
+        </div>
+    </div>
+
+    <div id="left">
+    <div id="first">
+        <h2>文章一级标题</h2>
+        <h3>文章二级标题</h3>
+        <h4>文章作者 编辑时间</h4>
+        <p />
+        <p>用JavaScript写AJAX前面已经介绍过了，主要问题就是不同浏览器需要写不同代码，<a href="http://www.baidu.com">相关对象来处理AJAX</a>要考虑浏览器问题，代码也能大大简化。</p>
+        <img src="image/1.jpg"width="50%" height="50%" />
+        <p>用JavaScript写AJAX前面已经介绍过了，主要问题就是不同浏览器需要写不同代码，<a href="www.baidu.com" target="_blank">相关对象来处理AJAX</a>要考虑浏览器问题，代码也能大大简化。</p>
+    </div>
+
+    <div id="third">
+        <h2>另一篇文章标题</h2>
+        <p />
+        <h2>文章二级标题</h2>
+        <p />
+        <p>文章作者 编辑时间</p>
+        <p />
+        <p>用JavaScript写AJAX前面已经介绍过了，主要问题就是不同浏览器需要写不同代码，<a href="www.baidu.com">相关对象来处理AJAX</a>要考虑浏览器问题，代码也能大大简化。</p>
+        <img src="image/2.jpg" width="50%" height="50%"/><br>
+        <div class="liebiao" style="line-height: 50px">
+            <a href="#">列表链接一</a><br>
+            <a href="#">列表链接二</a><br>
+            <a href="#">列表链接三</a><br>
+        </div>
+    </div>
+    <div id="fourth">
+        <h2>图片</h2>
+        <div class="pic1">
+            <p class="miaoshu">好看的图片</p>
+            <img src="image/1.jpg" width="20px" height="20px" />
+        </div>
+        <div class="pic2">
+            <p class="miaoshu2">好看的图片</p>
+            <img src="image/2.jpg" width="20px" height="20px" />
+        </div>
+        <div class="pic2">
+            <p class="miaoshu2">好看的图片</p>
+            <img src="image/2.jpg" width="20px" height="20px" />
+        </div>
+    </div>
+    <div id="fifth">
+        <h2>另一篇文章标题</h2>
+        <p />
+        <h2>文章二级标题</h2>
+        <p />
+        <p>文章作者 编辑时间</p>
+        <p />
+        <ol style="padding-left: 30px">
+            <li>排名一</li>
+            <li>排名二</li>
+            <li>排名三</li>
+        </ol>
+        <p />
+        <p>下面是一个表格</p>
+        <div id="table">
+            <table  id="table1"style="padding-bottom: 50px" align="center">
+                <tr style="background-color: chocolate">
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </tr>
+                <tr >
+                    <th>内容</th>
+                    <th>内容</th>
+                    <th><a href="#">操作</a></th>
+                </tr>
+                <tr>
+                    <th>内容</th>
+                    <th>内容</th>
+                    <th><a href="#">操作</a></th>
+                </tr>
+                <tr>
+                    <th>内容</th>
+                    <th>内容</th>
+                    <th><a href="#">操作</a></th>
+                </tr>
+                <tr style="background-color: gainsboro">
+                    <th>内容</th>
+                    <th colspan="2">1000</th>
+                </tr>.
+            </table>
+        </div>
+    </div>
+    <p />
+    </div>>
+
+</div>
+</div>>
+<footer>
+    <p>版权所有ⓒStella</p>
+</footer>
+</body>
+</html>

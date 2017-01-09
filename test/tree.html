@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="tree.js"></script>
+    <style>
+        div{
+            border: solid black 1px;
+        }
+        .root{
+            display: flex;
+            padding: 20px;
+            justify-content: space-between;
+            width: 1000px;
+            height: 300px;
+            margin: 100px auto;
+
+        }
+        .child_1{
+            display: flex;
+            width: 450px;
+            height: 260px;
+            justify-content: space-between;
+            padding:20px ;
+
+        }
+        .child_2{
+            display: flex;
+            width: 175px;
+            height: 220px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .child_3{
+            display: flex;
+            width: 37.5px;
+            height: 180px;
+            justify-content: space-between;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="root">
+    <div class="child_1">
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+    </div>
+    <div class="child_1">
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+        <div class="child_2">
+            <div class="child_3"></div>
+            <div class="child_3"></div>
+        </div>
+    </div>
+</div>
+<input type="button" value="先序遍历"/>
+<input type="button" value="中序遍历"/>
+<input type="button" value="后序遍历"/>
+<input type="button" value="stop"/>
+
+
+</body>
+</html>

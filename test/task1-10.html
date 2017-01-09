@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #first{
+            border: dotted red 1px;
+            width: 150px;
+            height: 120px;
+            margin: 20px;
+        }
+        #second{
+            border: dotted red 1px;
+            width: 150px;
+            height: 100px;
+            margin: 20px;
+
+        }
+        #third{
+            border: dotted red 1px;
+            width: 150px;
+            height: 40px;
+            margin: 20px;
+        }
+        #fourth{
+            border: dotted blue 1px;
+            width: 150px;
+            height: 200px;
+            margin: 20px;
+        }
+        #fifth{
+            border: dotted blue 1px;
+            width: 150px;
+            height: 80px;
+            margin: 20px;
+        }
+        @media (min-width: 641px) {
+            #wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+
+            }
+        }
+
+        @media (max-width: 640px) {
+            #wrap{
+                display: flex;
+                flex-wrap: wrap;
+
+                padding: 20px;
+                align-content: space-between;
+                /*align-items: flex-start;*/
+
+            }
+            #first{
+                order: 2;
+
+            }
+            #second{
+                order: 3;
+            }
+            #third{
+                order: 4;
+            }
+            #fourth{
+                order: 1;
+                margin-bottom: 20px;
+            }
+            #fifth{
+                order: 5;
+
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+<div id="first"></div>
+<div id="second"></div>
+<div id="third"></div>
+<div id="fourth"></div>
+    <div id="fifth"></div>
+</div>
+</body>
+</html>
